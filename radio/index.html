@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RADIO LA PUNTA - En vivo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url("Captura_de_pantalla_2025-10-19_231230-removebg-preview.png") no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 100vh;
+      padding: 30px 15px;
+      backdrop-filter: brightness(0.7);
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffe1;
+      font-size: 3rem;
+      margin-bottom: 0.2rem;
+      text-shadow: 0 0 15px #00ffe1;
+    }
+
+    h2 {
+      color: #ff3cac;
+      font-size: 1.4rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 8px #ff3cac;
+    }
+
+    .player {
+      width: 100%;
+      max-width: 500px;
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid #00ffe1;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    }
+
+    .social {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .social a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: #ffd700;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social a:hover {
+      transform: scale(1.3);
+      color: #00ffe1;
+    }
+
+    footer {
+      display: none;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a2d9b6f58c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>RADIO LA PUNTA</h1>
+  <h2>🎧 ¡Conéctate a la mejor energía musical!</h2>
+
+  <div class="player">
+    <div class="cc_player" data-username="krdtrpgo" data-size="sm" data-style="light">Cargando reproductor...</div>
+  </div>
+
+  <div class="social">
+    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+
+  <!-- Script del reproductor oficial -->
+  <script language="javascript" type="text/javascript" src="https://us5new.listen2myradio.com:2199/system/player.js"></script>
+</body>
+</html>
